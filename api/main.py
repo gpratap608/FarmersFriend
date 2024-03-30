@@ -34,7 +34,7 @@ def train(cropCode:int,cropDays:int,soilMoisture:int,temperature:int,humidity:in
 
     return POST
 
-@app.route("/")
+@app.route("/",methods=['GET'])
 def home():
     return "<h1> Hello World </h1>"
 
