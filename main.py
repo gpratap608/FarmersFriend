@@ -47,7 +47,7 @@ def store(cropCode:int,cropDays:int,temperature:int,humidity:int):
 
     return jsonify({'response':"Data Uploaded"})
 
-@app.route('/soil-moisture', methods=['GET'])
+@app.route('/api/soil-moisture', methods=['GET'])
 def handle_soil_moisture():
     # Get soil moisture level from query parameter
     moisture_level = int(request.args.get('level'))
